@@ -1,0 +1,77 @@
+
+body{
+    background-color: rgb(245, 237, 237);
+}
+/* BOTOES */
+.button{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: rgba(26, 114, 31, 0.973);
+    border-radius: 10px;
+    
+
+}
+/* TITULO; */
+h2{
+    color: rgb(250, 244, 244);
+    padding: 30px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.911);
+}
+h1{
+    color: rgb(3, 3, 3);
+    text-align: center;
+    margin-top: 10PX;
+}
+/* FORMULARIO */
+.altura, .peso{
+    border-radius: 15px;
+
+}
+#form{
+    margin:auto;
+    width: 350px;
+
+}
+
+
+#table{
+    background-color: rgb(5, 63, 5);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 450px;
+}
+
+@media screen and (max-width: 500px) {
+   
+    #table thead{
+          display: none;
+      }
+      #table td {
+       display: flex;
+       justify-content: space-between;
+   }
+   #tr {
+       display: block;
+       margin-bottom: 10px;
+   }
+   #table td:first-of-type{
+       font-weight: bold;
+       font-size: 1.2rem;
+       text-align: center;
+       display: block;
+   }
+   #table td:not(:first-of-type):before{
+       content: attr(data-title);
+       display: block;
+   }
+   #table{
+    width: 280px;
+}
+#form{
+    width: 280px;
+
+}
+}
